@@ -72,33 +72,53 @@ void reverse(char str[])
 int main() 
 { 
 	int num;
+	int num1;
 	char str[50];
     //char str[] = "GeeksQuiz"; 
     puts("1. Inicializar la estructura cola:");
     puts("2. Inicializar la estructura pila:");
-
-
+	
+	
 	printf( "Introduce un numero: " );
 	scanf ( "%i", &num );
+    while(1){
     
     puts("Ingrese la cadena:");
 	scanf( "%s", str );
-
 	if(num==1){
 	printf("La cola es: %s \n", str); 
     	printf("3. Insertar dato \n"); 
     	printf("4. Extraer dato \n");
     	printf("5. Cambiar estructura de los datos \n");
+    	printf("6. Imprimir lista \n");
+    	while(-1){
+    	printf("Introduce un numero: ");
+    		scanf ( "%i", &num1 );
+    			if(num1==3)printf("6. Imprimir lista \n");
+    			else if(num1==4)printf("6. Imprimir lista \n");
+    			else if(num1==5)break;
+    			else if(num1==6)printf("La cola es: %s \n", str); 
+			}
 	}
 	
 	else if(num==2){
     reverse(str); 
-    printf("La pila es: %s", str); 
-    	printf("3. Insertar dato"); 
-    	printf("4. Extraer dato");
-    	printf("5. Cambiar estructura de los datos");
+    printf("La pila es: %s \n", str); 
+    	printf("3. Insertar dato \n"); 
+    	printf("4. Extraer dato \n");
+    	printf("5. Cambiar estructura de los datos \n");
+    	printf("6. Imprimir lista \n");
+    	while(-1){
+    	
+    	    	printf("Introduce un numero: ");
+    		scanf ( "%i", &num1 );
+    			if(num1==3)printf("6. Imprimir lista \n");
+    			else if(num1==4)printf("6. Imprimir lista \n");
+    			else if(num1==5)break;
+    			else if(num1==6)printf("La pila es: \n", str); 
+    			}
     }
-    
+    }
     
     
     
