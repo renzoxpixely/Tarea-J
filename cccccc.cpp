@@ -103,10 +103,7 @@ int main()
 						printf("La cola es: %s \n", str); 
     			}
     			else if(num1==4){
-    			
-    				
-				
-    			printf("La cola es: %s \n", str); 
+    			printf("El resultado es: %s \n", str2); 
 				}
     			else if(num1==5)break;
     			else if(num1==6)printf("La cola es: %s \n", str); 
@@ -131,7 +128,9 @@ int main()
 						strcat( str, str2 );
 						printf("La cola es: %s \n", str); 
     			}
-    			else if(num1==4)printf("6. Imprimir lista \n");
+    			else if(num1==4){
+				printf("El resultado es: %s \n", str2); 
+				}
     			else if(num1==5)break;
     			else if(num1==6)printf("La pila es: \n", str); 
     			}
