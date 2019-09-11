@@ -85,14 +85,22 @@ int main()
 	scanf( "%s", str );
 
 	if(num==1){
-	printf("La cola es: %s", str); 
-	
+	printf("La cola es: %s \n", str); 
+    	printf("3. Insertar dato \n"); 
+    	printf("4. Extraer dato \n");
+    	printf("5. Cambiar estructura de los datos \n");
 	}
 	
 	else if(num==2){
     reverse(str); 
     printf("La pila es: %s", str); 
-   
+    	printf("3. Insertar dato"); 
+    	printf("4. Extraer dato");
+    	printf("5. Cambiar estructura de los datos");
     }
+    
+    
+    
+    
 	return 0; 
 } 
