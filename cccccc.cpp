@@ -74,6 +74,7 @@ int main()
 	int num;
 	int num1;
 	char str[50];
+	char str2[50];
     //char str[] = "GeeksQuiz"; 
     puts("1. Inicializar la estructura cola:");
     puts("2. Inicializar la estructura pila:");
@@ -94,8 +95,19 @@ int main()
     	while(-1){
     	printf("Introduce un numero: ");
     		scanf ( "%i", &num1 );
-    			if(num1==3)printf("6. Imprimir lista \n");
-    			else if(num1==4)printf("6. Imprimir lista \n");
+    			if(num1==3)
+    			{
+    				    puts("Ingrese dato:");
+						scanf( "%s", str2 );
+						strcat( str, str2 );
+						printf("La cola es: %s \n", str); 
+    			}
+    			else if(num1==4){
+    			
+    				
+				
+    			printf("La cola es: %s \n", str); 
+				}
     			else if(num1==5)break;
     			else if(num1==6)printf("La cola es: %s \n", str); 
 			}
@@ -112,7 +124,13 @@ int main()
     	
     	    	printf("Introduce un numero: ");
     		scanf ( "%i", &num1 );
-    			if(num1==3)printf("6. Imprimir lista \n");
+    			if(num1==3)
+    			{
+    				    puts("Ingrese dato:");
+						scanf( "%s", str2 );
+						strcat( str, str2 );
+						printf("La cola es: %s \n", str); 
+    			}
     			else if(num1==4)printf("6. Imprimir lista \n");
     			else if(num1==5)break;
     			else if(num1==6)printf("La pila es: \n", str); 
